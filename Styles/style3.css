@@ -1,0 +1,196 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+header {
+    color: black; /*Establece el color del texto, el relleno, la alineación del texto, el margen */
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    text-shadow: -5px -5px 10px #9eb1d6; /* -5px(izquierda) -5px(derecha) 10px(%de sombra en el texto) */        
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el padding del ul */
+    margin: 0; /* Elimina el margen del ul */
+}
+
+li {
+    display: inline; /* Hace que los li sean elementos en línea */
+}
+
+a {   
+    margin-right: 15px; /* Añade espacio entre los enlaces */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #222;
+    color: cyan;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    width: 100%;
+    top: 0; /*rellena el fondo en la parte de arriba*/
+    left: 0;
+    box-sizing: border-box; /* Opcional para incluir el relleno y el borde en el ancho */ 
+    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */    
+}
+
+#nav-menu li {
+    margin: 5px 0; /* Espacio entre los elementos de la lista */     
+}
+
+#nav-menu a {
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1rem; /* Tamaño de letra más pequeño */ 
+    color: white; /* Color del texto */
+}
+
+/* Estilos para el menú de navegación */
+#nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column; /* Cambiar dirección por defecto a columna */
+    align-items: center; /* Centrar los elementos */           
+}
+
+/* Estilos para el ícono de hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 1.5rem;    
+}
+
+/* Mostrar el menú cuando se activa */
+#nav-menu.active {
+    display: flex;
+}
+
+#segundo_titulo {
+    font-size: 1.3rem;
+}
+
+#tercer_titulo {
+    font-size: 1.3rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    background-color: #9eb1d6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Altura del pie de página */
+    padding: 0.5rem;
+}
+
+#parrafo-footer {
+    padding-top: 0px;
+}
+
+/* Ocultar el menú en dispositivos móviles por defecto */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    #nav-menu {
+        display: none; /* Mantener oculto hasta que se haga clic en el ícono */
+    }
+}
+
+

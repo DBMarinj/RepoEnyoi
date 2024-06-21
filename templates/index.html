@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/Styles/styles.CSS">
+    <title>Mi Portafolio</title>
+    <!-- Incluir la biblioteca ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- Incluir tu archivo JS -->
+    <script defer src="/scripts/grafica.js"></script>
+    <script defer src="/scripts/acordeon.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Icono de hamburguesa -->
+            </div>
+            <ul id="nav-menu">
+                <center>
+                    <b><li><a href="index.html" target="_blank">Biografía</a></li></b>
+                    <b><li><a href="proyectos.html" target="_blank">Proyectos</a></li></b>
+                    <b><li><a href="contacto.html" target="_blank">Contáctame</a></li></b>
+                </center>
+            </ul>
+        </nav>      
+    </header>
+    
+    <main>
+        <section>
+            <h1><center>Deyson Benhur Marín Jaramillo</center></h1>
+            <center><h2 id="segundo_titulo">Ingeniero de Sistemas de Información</h2></center>
+            <center><h2 id="tercer_titulo">Desarrollador Full Stack, Inglés Nivel B2</h2></center>
+            <center><img src="/Assets/images/Foto_perfil.jpeg" alt="Foto mía de medio cuerpo" class="clas-img"></center>
+            <center><p>Experiencia en diseño de landing page realizado con WordPress y Elementor, adicionalmente e-commerce realizado con Divi. <br>
+            Conocimientos de diseño en photoshop y canva</p></center>
+        </section>
+        <hr>
+        <article>
+            <center><h2>Formación Académica</h2></center>
+            <div class="container"> <!-- Contenedor padre --> 
+                <div class="card">  <!-- Contenedor hijo -->
+                    <h2>Ingeniería de Sistemas</h2>                    
+                    <img src="/Assets/images/ingenieria de sistemas.png" alt="designer" class="clas-imag">                    
+                    <p>25 de abril, 2015</p>                   
+                </div>
+                <div class="container2">                    
+                    <div class="card2">                        
+                        <h2>Especialización Bases de datos</h2>                       
+                            <img src="/Assets/images/Especialización tecnológica en gestión y seguridad en base de datos.png" alt="Landing" class="clas-landing">                        
+                        <p>08 de febrero, 2016</p>                        
+                    </div>
+                </div>
+                <div class="container3">
+                    <div class=" card3">
+                        <h2>Certificación ITIL V4</h2>
+                            <img src="/Assets/images/Certificate ITIL.png" alt="Certificación_Itil" class="clas-certificacion">
+                            <p>21 de junio, 2014</p>                     
+                    </div>                 
+                </div>
+                <div class="container4">
+                    <div class="card4">
+                        <h2>Tarjeta Profesional</h2>
+                            <img src="/Assets/images/Tarjeta Profesional.png" alt="Tarjeta_Profesional" class="clas-tarjeta_Pro">
+                            <p>21 de mayo, 2015</p>                       
+                    </div>
+                </div>
+            </div>                    
+        </article>
+        <hr>
+        <section>
+            <center><h2>Lenguajes de Programación</h2></center>
+            <!-- Contenedor para el gráfico -->
+            <div id="main"></div>
+        </section>
+        <hr>
+        <section>
+            <center><h2>Experiencia Laboral</h2></center>
+            <div class="accordion">
+                <button class="accordion-btn">COMWARE S.A.-EMTELCO S.A. - Gestor de requerimientos DOC Data Center</button>
+                <div class="accordion-content">
+                    <p><strong>Fecha:</strong> 17 de diciembre de 2018 hasta 27 de marzo de 2023 (desde 16 agosto hasta 16 de diciembre(Emtelco))</p>
+                    <p><strong>Funciones:</strong> Análisis y gestión de los requerimientos e incidentes que llegan al buzón SoporteDataCenter@TigoUne.com, así mismo atención sobre inquietudes generadas desde las diferentes áreas internas a nivel corporativo de Tigo-Une.</p>
+                    <p><strong>Jefe Inmediato:</strong> Danilo Sanchez</p>
+                    <p><strong>Cargo:</strong> Supervisor encargado</p>
+                    <p><strong>Teléfono:</strong> (604)5154948</p>
+                    <p><strong>Celular:</strong> 3017777402</p>
+                </div>
+
+                <button class="accordion-btn">EMTELCO S.A. - Analista de soporte mesa de servicios TI, EPM</button>
+                <div class="accordion-content">
+                    <p><strong>Fecha:</strong> 17 de noviembre del 2014 hasta de 15 agosto de 2016 </p>
+                    <p><strong>Funciones:</strong> Atención sobre los incidentes, solicitudes y tareas que los funcionarios y contratistas de EPM solicitan a través de los diferentes canales de atención cómo catálogo, correo, vía telefónica llamando a través de la línea de atención 3805556.</p>
+                    <p><strong>Jefe Inmediato:</strong> Jhon Julián Rodríguez Cifuentes</p>
+                    <p><strong>Cargo:</strong> Líder operación gestión remota</p>
+                    <p><strong>Teléfono:</strong> (604)3805510</p>
+                    <p><strong>Celular:</strong> 3166258480</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <b><center><p id="parrafo-footer">&copy; <span id="current-year"></span> Deyson B. Marín J. Todos los derechos reservados.</p></center></b>
+    </footer>
+    <script defer src="/scripts/copyright.js">       
+    </script>
+</body>
+</html>

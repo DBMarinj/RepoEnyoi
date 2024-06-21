@@ -1,0 +1,350 @@
+:root {
+    --Primary-color: #7fffd4; /* Se establecen variables de colores para utilizar en el diseño*/
+    --Second-color: #629e8f; 
+    --Web-font: #a9ccc3;
+    --Green-color: #adff2f;
+    --Third-color: #9eb1d6;
+}
+
+body {
+    font-family: Arial, sans-serif; /*Define el estilo del cuerpo de la página (body), utilizando la fuente Arial,*/
+    margin: 0; /* eliminando márgenes y relleno, estableciendo un fondo degradado y ajustando el ancho y alto para ocupar toda la ventana gráfica. */
+    padding: 0;
+    background-color: skyblue;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    color: black; /*Establece el color del texto, el relleno, la alineación del texto, el margen */
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    text-shadow: -5px -5px 10px #9eb1d6; /* -5px(izquierda) -5px(derecha) 10px(%de sombra en el texto) */        
+}
+
+
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #222;
+    color: cyan;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    width: 100%;
+    top: 0; /*rellena el fondo en la parte de arriba*/
+    left: 0;
+    box-sizing: border-box; /* Opcional para incluir el relleno y el borde en el ancho */ 
+    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */    
+}
+
+#nav-menu li {
+    margin: 5px 0; /* Espacio entre los elementos de la lista */     
+}
+
+#nav-menu a {
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1rem; /* Tamaño de letra más pequeño */ 
+    color: white; /* Color del texto */
+}
+
+/* Estilos para el menú de navegación */
+#nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column; /* Cambiar dirección por defecto a columna */
+    align-items: center; /* Centrar los elementos */           
+}
+
+/* Estilos para el ícono de hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 1.5rem;    
+}
+
+/* Mostrar el menú cuando se activa */
+#nav-menu.active {
+    display: flex;
+}
+
+#segundo_titulo {
+    font-size: 1.3rem;
+}
+
+#tercer_titulo {
+    font-size: 1.3rem;
+}
+
+section {
+    padding: 10px;
+    margin: 20px;
+    /*border: 1px #55050b solid;*/
+    font-style: italic;
+}
+
+article {
+    padding: 20px;
+    margin: 20px;
+    /*border: 1px #55050b solid;*/          
+}
+
+article > h2 {
+    margin-left: 500px; /* ajusta el margen izquierdo de los títulos dentro de los artículos.*/
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el padding del ul */
+    margin: 0; /* Elimina el margen del ul */
+}
+
+li {
+    display: inline; /* Hace que los li sean elementos en línea */
+}
+
+a {   
+    margin-right: 15px; /* Añade espacio entre los enlaces */
+}
+
+ol { 
+    color: black;
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    text-shadow: -5px -5px 10px #9eb1d6;
+}
+
+.container {
+    display: flex;
+    padding-left: 100px;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas en dispositivos móviles */
+}
+
+.container > .card {
+    width: 462px;
+    height: 510px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #ccc;*/
+    justify-content: space-around;
+}
+
+.container2 > .card2 {
+    width: 462px;
+    height: 510px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #ccc;*/
+    justify-content: space-around;
+}
+
+.container3 > .card3 {
+    width: 462px;
+    height: 510px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #ccc;*/
+    justify-content: space-around;
+}
+
+.container4 > .card4 {
+    width: 462px;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #ccc;*/
+    justify-content: space-around;
+}
+
+.container4 .card4 h2 {
+    position: relative;
+    top: -4em; /* Ajusta esta unidad según el tamaño de línea que estés utilizando */
+}
+
+.card > img {
+    width: 14rem;
+    height: 14rem;    
+}
+
+.card2 > img {
+    width: 14rem;
+    height: 14rem;    
+}
+
+.card > p {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Altura del pie de página */
+    padding: 0.5rem;
+}
+
+#parrafo-footer {
+    padding-top: 0px;
+}
+
+.clas-img {
+    width: 150px; /* tamaño más pequeño */
+    height: 150px; /* tamaño más pequeño */
+    border-radius: 50%; /* hace que la imagen sea circular */
+    object-fit: cover; /* se asegura de que la imagen cubra el área de 150x150 píxeles */
+}
+
+.clas-imag, .clas-landing-wrapper, .clas-landing, .clas-certificacion, .clas-tarjeta_Pro {
+    width: 200px; /* tamaño cuadrado */
+    height: 200px; /* tamaño cuadrado */
+    border-radius: 0; /* mantener la forma cuadrada */
+    object-fit: cover; /* se asegura de que la imagen cubra el área de 200x200 píxeles */
+    overflow: hidden; /* asegura que cualquier contenido que se desborde se oculte */
+    transition: transform 0.3s ease; /* Añadir una transición suave para el efecto de zoom */
+}
+
+.clas-imag:hover, .clas-landing-wrapper:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
+    transform: scale(2.2); /* Efecto de zoom al pasar el mouse */
+}
+
+.clas-landing {
+    width: 200px; /* tamaño cuadrado */
+    height: 200px; /* tamaño cuadrado */
+    border-radius: 0; /* mantener la forma cuadrada */
+    overflow: hidden; /* para asegurarse de que cualquier parte de la imagen que exceda el contenedor se recorte */
+    display: flex;
+    justify-content: center; /* centra la imagen horizontalmente */
+    align-items: center; /* centra la imagen verticalmente */
+}
+
+section > #main {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;    
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header, nav, section, aside, footer {
+        margin: 0px;
+        padding: 5px;
+        font-size: 1rem;
+    }    
+
+    article > h2 {
+        margin-left: 0; /* Ajustar el margen para dispositivos móviles */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .clas-landing {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding-left: 10px;
+    }
+
+    .container > .card,
+    .container2 > .card2,
+    .container3 > .card3,
+    .container4 > .card4 {
+        width: 100%;
+        height: auto;
+    }
+
+    section > #main {
+        height: 200px;
+        width: 100%;
+        max-width: 400px;        
+        margin: 0 auto; 
+    }
+}
+
+/* Estilos para el acordeón */
+.accordion {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-btn {
+    background-color: #629e8f;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.accordion-btn.active, .accordion-btn:hover {
+    background-color: #7fffd4;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 10px;
+}
+
+.accordion-content p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Ocultar el menú en dispositivos móviles por defecto */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    #nav-menu {
+        display: none; /* Mantener oculto hasta que se haga clic en el ícono */
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .container4 .card4 h2 {
+            position: relative;
+            top: 0.5em; /* Mueve el título tres renglones hacia abajo */
+    }
+    
+    .clas-imag, .clas-landing, .clas-certificacion, .clas-tarjeta_Pro {
+            width: 100%;
+            height: auto;
+    }
+    
+        .clas-imag:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
+            transform: scale(1.1); /* Reduce el zoom en un 50% del original 2.2 a 1.1 */
+    }
+}
+    
+
