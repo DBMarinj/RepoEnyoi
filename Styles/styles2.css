@@ -183,6 +183,27 @@ footer {
     border: 4px solid green;
 }
 
+.navbar-social-networks {
+    width: 100%;       
+}
+
+.navbar-social-networks > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar-social-networks > ul {
+    list-style: none;
+    
+}
+
+.bx {
+    font-size: 3rem;
+    color: #7ca0fb;
+}
+
 
 @media screen and (max-width: 420px) {
     .main-container {
