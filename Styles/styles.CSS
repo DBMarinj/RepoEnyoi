@@ -223,6 +223,7 @@ footer {
     transition: transform 0.3s ease; /* Añadir una transición suave para el efecto de zoom */
 }
 
+/* Estilos para el aumento de zoom en modo escritorio */
 .clas-imag:hover, .clas-landing-wrapper:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
     transform: scale(2.2); /* Efecto de zoom al pasar el mouse */
 }
@@ -242,6 +243,11 @@ section > #main {
     max-width: 600px;
     height: 500px;
     margin: 0 auto;    
+}
+
+/* Estilos generales */
+.clas-imag, .clas-landing, .clas-certificacion, .clas-tarjeta_Pro {
+    transition: transform 5s ease; /* Duración de la transición */
 }
 
 /* Media queries para dispositivos móviles */
@@ -280,8 +286,17 @@ section > #main {
         max-width: 400px;        
         margin: 0 auto; 
     }
+     /* Mover el texto Deyson Marín dos renglones hacia abajo */
     section h1 {
         margin-top: 3rem;
+    }
+    /* Ajustes de zoom en modo responsivo */
+    .clas-imag:hover, .clas-landing:hover, .clas-landing-wrapper:hover {
+        transform: scale(1.5); /* Aumentar el zoom al pasar el mouse */
+    }
+
+    .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
+        transform: scale(1.1); /* Aumentar el zoom al pasar el mouse */
     }
 }
 
@@ -338,18 +353,16 @@ section > #main {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .container4 .card4 h2 {
-            position: relative;
-            top: 0.5em; /* Mueve el título tres renglones hacia abajo */
+        position: relative;
+        top: 0.5em; /* Mueve el título tres renglones hacia abajo */
     }
     
     .clas-imag, .clas-landing, .clas-certificacion, .clas-tarjeta_Pro {
-            width: 100%;
-            height: auto;
+        width: 100%;
+        height: auto;
     }
     
-    .clas-imag:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
-            transform: scale(1.5);  /* Efecto de zoom al pasar el mouse */
-    }
+    
 }
     
 
