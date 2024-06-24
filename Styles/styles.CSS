@@ -339,7 +339,10 @@ section > #main {
     padding: 10px 0;
     margin: 0;
 }
-
+#btn-comware,
+#btn-emtelco {
+    color: black;
+}
 /* Ocultar el menú en dispositivos móviles por defecto */
 @media (max-width: 768px) {
     .hamburger {
