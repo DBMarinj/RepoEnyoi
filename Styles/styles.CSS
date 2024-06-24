@@ -280,7 +280,12 @@ section > #main {
         max-width: 400px;        
         margin: 0 auto; 
     }
+    section h1 {
+        margin-top: 3rem;
+    }
 }
+
+
 
 /* Estilos para el acordeón */
 .accordion {
@@ -342,8 +347,8 @@ section > #main {
             height: auto;
     }
     
-        .clas-imag:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
-            transform: scale(1.1); /* Reduce el zoom en un 50% del original 2.2 a 1.1 */
+    .clas-imag:hover, .clas-landing:hover, .clas-certificacion:hover, .clas-tarjeta_Pro:hover {
+            transform: scale(1.5);  /* Efecto de zoom al pasar el mouse */
     }
 }
     
