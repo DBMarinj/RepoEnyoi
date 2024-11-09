@@ -23,11 +23,11 @@ option = {
       type: 'pie',
       radius: '50%',
       data: [
-        { value: 80, name: 'Html' },
+        { value: 75, name: 'Html' },
         { value: 70, name: 'Css' },
-        { value: 60, name: 'Python' },
-        { value: 60, name: 'Java Script' },
-        { value: 70, name: 'type script' }
+        { value: 65, name: 'Python + django' },
+        { value: 65, name: 'React JS' },
+        { value: 70, name: 'Bd con Postgress' }
       ],
       emphasis: {
         itemStyle: {
